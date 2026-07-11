@@ -112,7 +112,7 @@ Udemy-Course-Price-Prediction/
 
 ### Home Page
 
-![Home Page](Udemy Courses Prediction/images/home.png)
+![Home Page](./Udemy%20Courses%20Prediction/images/home.png)
 
 
 
