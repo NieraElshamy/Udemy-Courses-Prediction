@@ -3,20 +3,22 @@ import pandas as pd
 import joblib
 import os
 import warnings
+from pathlib import Path
 warnings.filterwarnings('ignore')
 
 # Load preprocessed data, encoders, scaler, and model
-def load_resources():   
-    # Load encoders and scaler
-    le_title = joblib.load(r'C:\Users\ALNOUR\OneDrive\Desktop\FINALLLL BOOTCAMP PRO\Data-Science-AI-24.25-master\Data-Science-AI-24.25-master\workspace\le_title.pkl')
-    le_wishlist = joblib.load(r'C:\Users\ALNOUR\OneDrive\Desktop\FINALLLL BOOTCAMP PRO\Data-Science-AI-24.25-master\Data-Science-AI-24.25-master\workspace\le_wishlist.pkl')
-    scaler = joblib.load(r'C:\Users\ALNOUR\OneDrive\Desktop\FINALLLL BOOTCAMP PRO\Data-Science-AI-24.25-master\Data-Science-AI-24.25-master\workspace\scaler.pkl')
-    
-    # Load model
-    model = joblib.load(r'C:\Users\ALNOUR\OneDrive\Desktop\FINALLLL BOOTCAMP PRO\Data-Science-AI-24.25-master\Data-Science-AI-24.25-master\workspace\rf_model.pkl')
-    
-    return le_title, le_wishlist, scaler, model
+# Project paths
+BASE_DIR = Path(__file__).resolve().parent.parent
+WORKSPACE_DIR = BASE_DIR / "workspace"
 
+# Load resources
+def load_resources():
+    le_title = joblib.load(WORKSPACE_DIR / "le_title.pkl")
+    le_wishlist = joblib.load(WORKSPACE_DIR / "le_wishlist.pkl")
+    scaler = joblib.load(WORKSPACE_DIR / "scaler.pkl")
+    model = joblib.load(WORKSPACE_DIR / "rf_model.pkl")
+
+    return le_title, le_wishlist, scaler, model
 def main():
     st.title('Udemy Course Rating Prediction')
 
