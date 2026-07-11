@@ -112,15 +112,9 @@ Udemy-Course-Price-Prediction/
 
 ### Home Page
 
-<p align="center">
-  <img src="screenshots/home.png" width="800"/>
-</p>
+![Home Page](images/home.png)
 
-### Prediction Result
 
-<p align="center">
-  <img src="screenshots/result.png" width="800"/>
-</p>
 
 ---
 
