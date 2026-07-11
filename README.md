@@ -114,10 +114,6 @@ Udemy-Course-Price-Prediction/
   <img src="images/home.png" width="800">
 </p>
 
-<p align="center">
-  <img src="images/prediction.png" width="800">
-</p>
-
 
 
 ---
