@@ -125,10 +125,4 @@ Udemy-Course-Price-Prediction/
 - Deploy the application online
 - Support more course features
 
----
 
-## 👩‍💻 Author
-
-**Noor Ahmed**
-
-Computer Science Graduate
