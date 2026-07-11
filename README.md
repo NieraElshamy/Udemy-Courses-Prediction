@@ -110,9 +110,9 @@ Udemy-Course-Price-Prediction/
 
 ## 📸 Application Preview
 
-<p align="center">
-  <img src="images/home.png" width="900">
-</p>
+### Home Page
+
+![Home Page](images/home.png)
 
 
 
